@@ -1,0 +1,245 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e4c2e1, #d2bee4, #e7ade9);
+  color: rgba(88, 64, 85, 0.986);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* NAVBAR (GLASS EFFECT) */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(149, 129, 155, 0.473);
+}
+
+nav h2 {
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(109, 66, 133);
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #44244d;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero img {
+  width: 140px;
+  border-radius: 50%;
+  border: 4px solid rgb(148, 122, 146);
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  font-size: 32px;
+  background: linear-gradient(to right, #a894a8, #967e90);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* SECTIONS */
+section {
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(80, 4, 76, 0.432);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(5, 5, 5, 0.4);
+}
+section.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* NAV BUTTON STYLE */
+nav ul li a {
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(45deg, #d4e5e6, #e6a6d8);
+  box-shadow: 0 0 10px #41165e;
+}
+
+/* HERO TEXT GLOW */
+.hero h1 {
+  text-shadow: 0 0 10px rgba(201, 108, 193, 0.76);
+}
+
+/* SECTION HOVER GLOW */
+section:hover {
+  box-shadow: 0 0 20px rgba(127, 96, 129, 0.521);
+}
+/* SKILLS */
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  background: linear-gradient(45deg, #eadeeedc, #b378a6);
+  padding: 8px 14px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* PROJECT CARD */
+.project-card {
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(83, 46, 81, 0.13);
+  margin-top: 10px;
+}
+
+.about {
+  text-align: center;
+  padding: 50px;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: auto;
+  color: #ddd;
+}
+
+.success-msg {
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.project-card {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-card button {
+  margin-top: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* BUTTON */
+button {
+  background: linear-gradient(45deg, #e3ccee, #b183a7);
+  color: rgb(144, 47, 153);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background: rgba(0,0,0,0.3);
+  color: #ccc;
+  font-size: 14px;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+}
+.socials {
+  margin-top: 10px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #f9ccff;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
